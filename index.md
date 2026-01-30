@@ -5,5 +5,5 @@ This is my website for Robots. I will be posting projects throughout the course 
 
 * * *
 
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/personal.jpeg" width="250" height="275" style="object-fit:fill;">
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/personal.jpeg" width="200" height="275" style="object-fit:fill;">
 
