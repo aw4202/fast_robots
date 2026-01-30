@@ -5,4 +5,4 @@ This is my website for Robots. I will be posting projects throughout the course 
 
 * * *
 
-![Photo](images/personal.jpg)
+![Photo](images/personal.jpeg)
