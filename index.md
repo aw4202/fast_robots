@@ -5,6 +5,6 @@ This is my website for Robots. I will be posting projects throughout the course 
 
 * * *
 
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/personal.jpeg" width=250px height=450px>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/personal.jpeg" width=50px height=100px>
 <img width="300" height="600" src=images/personal.jpeg>
 
