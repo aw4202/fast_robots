@@ -5,7 +5,7 @@ This is my website for Robots. I will be posting projects throughout the course 
 
 * * *
 
-<img src=images/personal.jpeg>
+<img width="100" height="200" src=images/personal.jpeg>
 
 <div style="width: 50%; height: 50%">
   ![photo2](images/personal.jpeg)
