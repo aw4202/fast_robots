@@ -6,3 +6,6 @@ This is my website for Robots. I will be posting projects throughout the course 
 * * *
 
 ![Photo](images/personal.jpeg | width=100 | height=200)
+<div style="width: 50%; height: 50%">
+  ![photo2](images/personal.jpeg)
+</div>
