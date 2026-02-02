@@ -31,3 +31,8 @@ layout: post
 #### Task 6
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task6_1.png">
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task6_2.png">
+
+#### Task 7
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task7_1.png">
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task7_2.png">
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task7_3.png">
