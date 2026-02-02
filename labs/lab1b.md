@@ -36,3 +36,4 @@ layout: post
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task7_1.png">
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task7_2.png">
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task7_3.png">
+(842160 - 842114 mS)/100 = .46 mS/time-temp reading
