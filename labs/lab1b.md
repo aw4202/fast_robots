@@ -16,3 +16,7 @@ layout: post
 #### Task 3
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task3_1.png">
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task3_2.png">
+
+
+#### Task 4
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task4.png">
