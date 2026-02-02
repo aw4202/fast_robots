@@ -1,4 +1,5 @@
 ---
+layout: post
 ---
 
 ## Lab 1a
