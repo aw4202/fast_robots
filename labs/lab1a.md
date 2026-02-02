@@ -15,3 +15,4 @@ Prelab 1b
 -updating pip, installing virtual environment, downloading codebase + activation of Jupyter lab
 later reading codebase Arduino, python (demo.py) files
 -Arduino BLE library install + running ble_arduino.ino (getting MAC address for first time)
+-UUID generation, updating Arudino and connection.yaml (also w MAC), calling get_ble_controller after changing configuration file
