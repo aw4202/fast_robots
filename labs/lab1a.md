@@ -16,7 +16,7 @@ Task 4
 
 #### Prelab Setup (1a)
 To setup the board I first added the board link* in the Additional Boards Url in Settings (Mac IDE) and then installed the board under Boards Manager. After selecting the board and USB port, I ran blink and the other sketches.
-I later installed the BLE library through Manage Libraries and set up the other code and environments (see Lab 1b). I ran ble_arduino for the first time to obtain the board's MAC address (screenshot in Lab 1b.)
+I later installed the BLE library through Manage Libraries and set up the other code and environments (see Lab 1b). I ran ble_arduino for the first time to obtain the board's MAC address (screenshot in Lab 1b.) \
 *source https://learn.sparkfun.com/tutorials/installing-board-definitions-in-the-arduino-ide/installing-a-third-party-board-definition
 
 #### Codebase
