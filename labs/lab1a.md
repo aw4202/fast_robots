@@ -8,8 +8,8 @@ Task 1
 Task 2
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6008.mov">
 Task 3
-To get an output in degrees Fahrenheit temp_raw in the print statement had to be changed to temp_f and converted to int.
-In the video I am blowing at a few times at the board.
+To get an output in degrees Fahrenheit temp_raw in the print statement had to be changed to temp_f and converted to int. \
+In the video I am blowing at a few times at the board. \
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6013.mov">
 Task 4
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6016.mov">
