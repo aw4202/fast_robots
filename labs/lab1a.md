@@ -15,16 +15,9 @@ Task 4
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6016.mov">
 
 #### Prelab Setup (1a)
--Arduino IDE installation, testing blink \
--installing RedBoard Artemis Nano board definition (Board Manager) using https://learn.sparkfun.com/tutorials/installing-board-definitions-in-the-arduino-ide/installing-a-third-party-board-definition,
-json link in Additional Boards Url
--board + port (usb) selection, running Apollo library specific temperature read (correction of pre-written code to get degrees F reading)
-
-Prelab 1b
--updating pip, installing virtual environment, downloading codebase + activation of Jupyter lab
-later reading codebase Arduino, python (demo.py) files
--Arduino BLE library install + running ble_arduino.ino (getting MAC address for first time)
--UUID generation, updating Arudino and connection.yaml (also w MAC), calling get_ble_controller after changing configuration file
+To setup the board I first added the board link* in the Additional Boards Url in Settings (Mac IDE) and then installed the board under Boards Manager. After selecting the board and USB port, I ran blink and the other sketches.
+I later installed the BLE library through Manage Libraries and set up the other code and environments (see Lab 1b). I ran ble_arduino for the first time to obtain the board's MAC address (screenshot in Lab 1b.)
+*source https://learn.sparkfun.com/tutorials/installing-board-definitions-in-the-arduino-ide/installing-a-third-party-board-definition
 
 #### Codebase
 The Arduino board and computer communicate via Bluetooth with the use of the ArduinoBLE library, with the computer acting as the central device (client) and the Arduino as the peripheral device (server). In this library, GATT characteristics are the services presented by the peripheral to the client. ble_arduino instantiates and writes to the GATT characteristics (which are defined in BLECStringCharacteristic.h) and the computer reads them through the receive command for each characteristic. The Arduino writes to the GATT characteristics when certain values are updated or commands issued, and the computer receives only the latest value. The GATT characteristics can also be written to by the computer via send_command and read by the Arduino such as in read_data and handle_command.
