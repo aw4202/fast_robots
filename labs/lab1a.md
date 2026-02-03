@@ -4,6 +4,14 @@ layout: default
 
 ## Lab 1a
 Task 1
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6018.mov">
+Task 2
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6008.mov">
+Task 3
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6013.mov">
+Task 4
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6016.mov">
+Task 1
 ![Task1](/IMG_6018.mov)
 Task 2
 ![Task2](/IMG_6008.mov)
