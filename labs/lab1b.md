@@ -42,4 +42,7 @@ As I ran code between the computer and Arduino, one initial difficulty was that 
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task7_1.png">
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task7_2.png">
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/1b_task7_3.png">
-(842160 - 842114 mS)/100 = .46 mS/time-temp reading
+(842160 - 842114 mS)/100 = .46 mS/time-temp reading \
+
+#### Lab 1a & b Credit
+For tasks 5-7 I compared my approach with last year's websites of TAs [Jack](https://jack-d-long.github.io/fast-robots/lab1a/#next-lab-1b), [Trevor](https://trevordales.github.io/MAE4190/lab1/) and [Selena](https://ssy37.github.io/labs/lab1B.html). I also wasn't sure how much to write so checked.
