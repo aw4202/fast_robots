@@ -7,7 +7,7 @@ layout: default
 #### Prelab Setup
 I updated pip, installed and activated the virtual environment, downloaded the codebase and started the JupyterLab server. I then installed the Arduino BLE library from the Library Manager, opened ble_arduino.ino from the codebase and ran it for the first time to obtain the board MAC address. I updated connections.yaml to match the MAC address. \
 I then generated a new uuid from my computer in Python and used it as the BLE service address in Python and Arduino (connections.yaml and ble_arduino). Since I'd modified connections.yaml, I called get_ble_controller to process the changes in Python. 
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/pre_1b.jpg width="500" height="700" style="object-fit:contain;">
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab1/pre_1b.jpg" width="500" height="700" style="object-fit:contain;">
 As I ran code between the computer and Arduino, one initial difficulty was that after each update to the Arduino file, the computer would throw errors and/or unexpected output. I found that it had to be disconnected and reconnected at each Arduino file update.
 
 #### Task 1
