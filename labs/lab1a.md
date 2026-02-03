@@ -13,7 +13,7 @@ Task 4
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6016.mov">
 
 #### Prelab Setup (1a)
--Arduino IDE installation, testing blink
+-Arduino IDE installation, testing blink \n
 -installing RedBoard Artemis Nano board definition (Board Manager) using https://learn.sparkfun.com/tutorials/installing-board-definitions-in-the-arduino-ide/installing-a-third-party-board-definition,
 json link in Additional Boards Url
 -board + port (usb) selection, running Apollo library specific temperature read (correction of pre-written code to get degrees F reading)
