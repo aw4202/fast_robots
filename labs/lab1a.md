@@ -3,10 +3,10 @@ layout: default
 ---
 
 ## Lab 1a
-![Task1](/IMG_6018.MOV)
-![Task2](/IMG_6008.MOV)
-![Task1](/IMG_6013.MOV)
-![Task1](/IMG_6016.MOV)
+![Task1](./IMG_6018.MOV)
+![Task2](./IMG_6008.MOV)
+![Task1](./IMG_6013.MOV)
+![Task1](./IMG_6016.MOV)
 
 #### Prelab Setup (1a)
 -Arduino IDE installation, testing blink
