@@ -12,8 +12,8 @@ To get an output in degrees Fahrenheit temp_raw in the print statement had to be
 In the video I am blowing at a few times at the board. \
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6013.mov">
 Task 4 \
-I am tapping near the microphone. Click on the video to hear sound. \
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/task4t.mov">
+I am tapping near the microphone. \
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/IMG_6016.mp4">
 
 #### Prelab Setup (1a)
 To setup the board I first added the board link* in the Additional Boards Url in Settings (Mac IDE) and then installed the board under Boards Manager. After selecting the board and USB port, I ran blink and the other sketches.
