@@ -4,7 +4,7 @@ layout: default
 
 ## Lab 1a
 Task 1
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6018.mov" width="300" height="400">
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6018.mov" width="300" height="400" style="object-fit: cover;">
 Task 2
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6008.mov">
 Task 3 \
