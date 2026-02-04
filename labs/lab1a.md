@@ -4,14 +4,15 @@ layout: default
 
 ## Lab 1a
 Task 1
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6018.mov">
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6018.mov" width="300" height="400">
 Task 2
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6008.mov">
 Task 3 \
 To get an output in degrees Fahrenheit temp_raw in the print statement had to be changed to temp_f and converted to int. \
 In the video I am blowing at a few times at the board. \
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6013.mov">
-Task 4
+Task 4 \
+I am tapping near the microphone. Click on the video to hear sound. \
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6016.mov">
 
 #### Prelab Setup (1a)
