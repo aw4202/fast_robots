@@ -13,7 +13,7 @@ In the video I am blowing at a few times at the board. \
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6013.mov" width="400" height="300" style="object-fit: fill;"> \
 Task 4 \
 I am tapping near the microphone. To hear sound download the video by left clicking it. \
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6016.mov" width="300" height="500" style="object-fit: fill;">
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/IMG_6016.mp4" width="300" height="500" style="object-fit: fill;">
 
 #### Prelab Setup (1a)
 To setup the board I first added the board link* in the Additional Boards Url in Settings (Mac IDE) and then installed the board under Boards Manager. After selecting the board and USB port, I ran blink and the other sketches.
