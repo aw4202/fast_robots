@@ -2,3 +2,8 @@
 ---
 
 @import "{{ site.theme }}";
+
+img {
+  max-width: 100%; /* Ensures the image is responsive */
+  height: auto;    /* Maintains the aspect ratio */
+}
