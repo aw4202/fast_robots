@@ -9,4 +9,4 @@
   so low alpha(~.1)->enough to cancel drift, low to introduce as little acc distrubance as possible
     -drift cancelled. filter fft amplitude often larger near dc due to much higher acc than gyro noise but drops quickly to similar magnitude
     as acc noise, so dc vs noise contrast clear
-  
+  -roll: drift outweighs noise (noise so small) that oscillations very small, along/centered at line of drift
