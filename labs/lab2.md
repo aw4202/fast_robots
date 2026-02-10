@@ -73,3 +73,7 @@ This translated to a higher alpha filter, relying more on present data and less 
     -drift cancelled. filter fft amplitude often larger near dc due to much higher acc than gyro noise but drops quickly to similar magnitude
     as acc noise, so dc vs noise contrast clear
   -roll: drift outweighs noise (noise so small) that oscillations very small, along/centered at line of drift
+
+  ### Car Video
+  <video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part_vid3.mp4" controls="controls" width="300" height="500"></video> <br>
+
