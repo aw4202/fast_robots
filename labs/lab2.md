@@ -12,7 +12,7 @@ The AD0 value is the last bit of the board's address for I2C communication. Per 
 The output of the board was measured against box angles. Since the readings were almost exactly as expected at pitch and roll = +/-90 degrees, calibration wasn't necessary.
 <video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part1_vid2.mp4" controls="controls" width="300" height="500"></video> \
 
-#### Accelerometer Fourier Transforms and Filters
+## Fourier Transforms and Filters - Accelerometer
 The stationary accelerometer shows very little noise, with nearly all time-amplitude data within one degree of the average.
 -calibration: not needed, accurate and low noise (see below)
 \
