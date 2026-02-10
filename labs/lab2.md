@@ -4,7 +4,7 @@ Output of board at {-90, 0, 90} pitch & roll\
 Also demonstrating the correct working of the IMU readings
 <video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part1_vid1.mp4" controls="controls" width="300" height="500"></video> \
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/rollpitcheqns.png" width="300" height="500" style="object-fit: fill;"> \
-*x, y, z in the image refer to components of acceleration or (when used for the gyroscope) angular speed
+*x, y, z in the image refer to components of acceleration or (when used for the gyroscope) angular speed <br>
 Yaw wasn't calculated because in the sensor's expected position laying flat, there wouldn't usually be a y component or x component of accleration, leaving yaw undefined as long as the x component is zero. Meanwhile, due to the weight of the board, a z component of acceleration is present at all times allowing pitch and roll calculation.<br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/acc_reference.png" width="200" height="500" style="object-fit: fill;"> \
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/from_datasheetacc.png" width="800" height="500" style="object-fit: fill;"> 
@@ -18,6 +18,7 @@ The output of the board was measured against box angles. Since the readings were
 The stationary accelerometer shows a consistent level of noise above near-zero frequencies. 
 
 Though the level of noise is low compared to the DC offset, it isn't meaningful data, and compared to gyroscope data (see below) it's relatively large, so should be filtered out. A cutoff frequency slightly above the DC is picked, fc = .. .
+Since the cutoff frequency is inversely proportional to RC, and RC is inversely proportional to the filter constant alpha, a low cutoff frequency sets a low alpha. Alpha weighs the current reading against the past, with a low value corresponding to lower reliance on new data and higher reliance on the previous. This makes sense given the noisiness of the sensor: the high frequency fluctuations aren't meaningful and are best filtered out with use of the average or other readings, which are dominated by the large DC offset.
 
 ### Gyroscope
 
