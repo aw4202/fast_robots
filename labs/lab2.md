@@ -4,13 +4,16 @@ Output of board at {-90, 0, 90} pitch & roll\
 Also demonstrating the correct working of the IMU readings
 <video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part1_vid1.mp4" controls="controls" width="300" height="500"></video> \
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/rollpitcheqns.png" width="300" height="500" style="object-fit: fill;"> \
-Yaw wasn't calculated because in the sensor's expected position laying flat, there wouldn't usually be a y component or x component of accleration, leaving yaw undefined as long as the x component is zero. Meanwhile, due to the weight of the board, a z component of acceleration is present at all times allowing pitch and roll calculation. \
+Yaw wasn't calculated because in the sensor's expected position laying flat, there wouldn't usually be a y component or x component of accleration, leaving yaw undefined as long as the x component is zero. Meanwhile, due to the weight of the board, a z component of acceleration is present at all times allowing pitch and roll calculation.\
 
 
 The AD0 value is the last bit of the board's address for I2C communication. Per board specifications this allows 2-slave I2C where the additional device has the opposite AD0 bit value as the board. Since the board always acts as slave and computer as master, this supports a third device.\
 
 The output of the board was measured against box angles. Since the readings were almost exactly as expected at pitch and roll = +/-90 degrees, calibration wasn't necessary.
 <video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part1_vid2.mp4" controls="controls" width="300" height="500"></video> \
+
+#### Accelerometer Fourier Transforms and Filters
+The stationary accelerometer shows very little noise, with nearly all time-amplitude data within one degree of the average.
 -calibration: not needed, accurate and low noise (see below)
 \
 -Compared to previous years' pages accelerometer is very low noise, with nearly all time-amplitude data within one degree
