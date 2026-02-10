@@ -34,6 +34,14 @@ Using fc=2, RC=1/(2pi*2), and with T~0.1, alpha=T/(T+RC)=0.56:<br>
 The resulting signals show noise improvements especially at higher frequencies compared to the unfiltered signal, while not going too far with eliminating noise. >50% weight is given to current data, which creates a margin of caution for unusual signals that may not be noise. In addition the noise level is relatively low, so further improving it at the cost of this margin wouldn't be worth it.<br>
 
 ### Gyroscope
+The equations for the gyroscope's yaw, pitch and roll are simply time interval updates (times speed) to its initial position, since it measures rotation about the x, y, and z axes per second (equivalent to change in roll, pitch, and yaw per second, respectively) <br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/gyro_data_ypr.png"  width="400" height="200" style="object-fit: fill;"><br>
+The gyroscope has lower noise than the acceleromater, with a fast decay (compared to the accelerometer's continuous oscillation) to values far lower than the accelerometer's. (See images below). There are at least a few degrees of drift per less than 10 s of data; the complementary filter value is chosen accordingly to correct this while is kept as 
+low as possible to avoid introducing noise from the accelerometer.<br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/gyro_update.png"  width="400" height="200" style="object-fit: fill;"><br>
+Through a few attempts a filter value of alpha=0.05 was found to eliminate drift while also minimizing noise due to the accelerometer. <br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/stat_gyr_1.png"  width="300" height="600" style="object-fit: fill;"><br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/stat_gyr_2.png"  width="300" height="600" style="object-fit: fill;"><br>
 
 consistently little noise, with nearly all time-amplitude data within a degree or two of the average.
 -calibration: not needed, accurate and low noise (see below)
