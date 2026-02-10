@@ -7,7 +7,7 @@ Also demonstrating the correct working of the IMU readings
 *x, y, z in the image refer to components of acceleration or (when used for the gyroscope) angular speed
 Yaw wasn't calculated because in the sensor's expected position laying flat, there wouldn't usually be a y component or x component of accleration, leaving yaw undefined as long as the x component is zero. Meanwhile, due to the weight of the board, a z component of acceleration is present at all times allowing pitch and roll calculation.<br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/acc_reference.png" width="200" height="500" style="object-fit: fill;"> \
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/from_datasheetacc.png" width="800" height="500" style="object-fit: fill;"> \
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/from_datasheetacc.png" width="800" height="500" style="object-fit: fill;"> 
 
 The AD0 value is the last bit of the board's address for I2C communication. Per board specifications this allows 2-slave I2C where the additional device has the opposite AD0 bit value as the board. Since the board always acts as slave and computer as master, this supports a third device.<br>
 
@@ -15,7 +15,13 @@ The output of the board was measured against box angles. Since the readings were
 <video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part1_vid2.mp4" controls="controls" width="300" height="500"></video> <br>
 
 ### Fourier Transforms and Filters - Accelerometer
-The stationary accelerometer shows very little noise, with nearly all time-amplitude data within one degree of the average.
+The stationary accelerometer shows a consistent level of noise above near-zero frequencies. 
+
+Though the level of noise is low compared to the DC offset, it isn't meaningful data, and compared to gyroscope data (see below) it's relatively large, so should be filtered out. A cutoff frequency slightly above the DC is picked, fc = .. .
+
+### Gyroscope
+
+consistently little noise, with nearly all time-amplitude data within a degree or two of the average.
 -calibration: not needed, accurate and low noise (see below)
 \
 -Compared to previous years' pages accelerometer is very low noise, with nearly all time-amplitude data within one degree
