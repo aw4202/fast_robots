@@ -1,5 +1,8 @@
 ## Lab 2
-\
+
+Output of board at {-90, 0, 90} pitch & roll
+Also demonstrating the correct working of the sensor readings
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/IMG_6018.mov"> \
 -calibration: not needed, accurate and low noise (see below)
 \
 -Compared to previous years' pages accelerometer is very low noise, with nearly all time-amplitude data within one degree
