@@ -35,15 +35,22 @@ The resulting signals show noise improvements especially at higher frequencies c
 
 ### Gyroscope
 The equations for the gyroscope's yaw, pitch and roll are simply time interval updates (times speed) to its initial position, since it measures rotation about the x, y, and z axes per second (equivalent to change in roll, pitch, and yaw per second, respectively) <br>
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/gyro_data_ypr.png"  width="400" height="200" style="object-fit: fill;"><br>
-The gyroscope has lower noise than the acceleromater, with a fast decay (compared to the accelerometer's continuous oscillation) to values far lower than the accelerometer's. (See images below). There are at least a few degrees of drift per less than 10 s of data; the complementary filter value is chosen accordingly to correct this while is kept as 
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/gyr_data_ypr.png"  width="400" height="200" style="object-fit: fill;"><br>
+The gyroscope has lower noise than the acceleromater, with a fast decay (compared to the accelerometer's continuous oscillation) to values far lower than the accelerometer's. (See images below). The gyr may start at higher DC values than the accelerometer but quickly decays to values at least as low. There are at least a few degrees of drift per less than 10 s of data; the complementary filter value is chosen accordingly to correct this while is kept as 
 low as possible to avoid introducing noise from the accelerometer.<br>
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/gyro_update.png"  width="400" height="200" style="object-fit: fill;"><br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/gyro_update.png"  width="650" height="200" style="object-fit: fill;"><br>
 Through a few attempts a filter value of alpha=0.05 was found to eliminate drift while also minimizing noise due to the accelerometer. <br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/stat_gyr_1.png"  width="300" height="600" style="object-fit: fill;"><br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/stat_gyr_2.png"  width="300" height="600" style="object-fit: fill;"><br>
 
-consistently little noise, with nearly all time-amplitude data within a degree or two of the average.
+### Vibration Testing the Gyro and Accelerometer
+With filter parameters set for both, the two were tested by placing them on top of a cover and thumping a finger against the cover from above, by knocking on the cover, and by being placed near a washing machine while on spin cycle. All tests produced similar time-amplitude profiles with similar filtering results. <br>
+consistently little noise, with nearly all time-amplitude data within a degree or two of the average.<br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/vibrations.png"  width="300" height="600" style="object-fit: fill;"><br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/vibrations_acc_fft.png"  width="300" height="600" style="object-fit: fill;"><br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/gyr_a=0.05_vib.png"  width="300" height="600" style="object-fit: fill;"><br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/gyr_a=0.05_fft_vib.png"  width="300" height="600" style="object-fit: fill;"><br>
+
 -calibration: not needed, accurate and low noise (see below)
 \
 -Compared to previous years' pages accelerometer is very low noise, with nearly all time-amplitude data within one degree
