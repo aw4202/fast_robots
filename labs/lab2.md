@@ -45,7 +45,6 @@ Through a few attempts a filter value of alpha=0.05 was found to eliminate drift
 
 ### Vibration Testing the Gyro and Accelerometer
 With filter parameters set for both, the two were tested by placing them on top of a cover and thumping a finger against the cover from above, by knocking on the cover, and by being placed near a washing machine while on spin cycle. All tests produced similar time-amplitude profiles with similar filtering results. <br>
-consistently little noise, with nearly all time-amplitude data within a degree or two of the average.<br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/vibrations.png"  width="300" height="600" style="object-fit: fill;"><br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/vibrations_acc_fft.png"  width="300" height="600" style="object-fit: fill;"><br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/gyr_a=0.05_vib.png"  width="300" height="600" style="object-fit: fill;"><br>
