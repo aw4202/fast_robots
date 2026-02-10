@@ -2,8 +2,8 @@
 
 Output of board at {-90, 0, 90} pitch & roll 
 Also demonstrating the correct working of the IMU readings
-<video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part1_vid1.mp4" width="300" height="500"></video> \
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/rollpitcheqns.png" width="300" height="500" style="object-fit: fill;"> \
+<video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part1_vid1.mp4" controls="controls" width="300" height="500"></video> \
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/rollpitcheqns.png" controls="controls" width="300" height="500" style="object-fit: fill;"> \
 
 The output of the board was measured against box angles. Since the readings were almost exactly as expected at pitch and roll = +/-90 degrees, calibration wasn't necessary.
 <video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part1_vid2.mp4" width="300" height="500"></video> \
