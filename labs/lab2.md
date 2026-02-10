@@ -20,7 +20,7 @@ The output of the board was measured against box angles. Since the readings were
 The stationary accelerometer shows a consistent level of noise above near-zero frequencies:<br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/stat_acc1.png" width="300" height="500" style="object-fit: fill;"> \
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/stat_acc2.png" width="300" height="500" style="object-fit: fill;"> <br>
-> without DC <br>
+###### without DC <br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/stat_acc3.png" width="300" height="500" style="object-fit: fill;"> <br>
 Though the level of noise is low compared to the DC offset, the noise isn't meaningful data, and it's large compared to gyroscope data (see below), so it should be filtered out. A cutoff frequency slightly above the DC is picked. Since the sampling period T is on average 1/80-1/120 sec, and it takes ~10 sampling frequencies to remove the DC for the stationary accelerometer (see FFT images below), fc ~ 10 * fsamp ~ 1 is chosen, fc = 2 Hz for slight margin.<br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/lpf_form.png" width="400" height="100" style="object-fit: fill;">
@@ -29,7 +29,7 @@ Since the cutoff frequency is inversely proportional to RC, and RC is inversely 
 Using fc=2, RC=1/(2pi*2), and with T~0.1, alpha=T/(T+RC)=0.56:<br>
 #### roll and pitch from accelerometer, without and with filter:
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/acc_w_filter.png" width="300" height="600" style="object-fit: fill;"> \
-> DC excluded<br>
+###### DC excluded<br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/acc_w_filter_fft.png" width="300" height="600" style="object-fit: fill;"> \
 The resulting signals show noise improvements especially at higher frequencies compared to the unfiltered signal, while not going too far with eliminating noise. >50% weight is given to current data, which creates a margin of caution for unusual signals that may not be noise. In addition the noise level is relatively low, so further improving it at the cost of this margin wouldn't be worth it.<br>
 
