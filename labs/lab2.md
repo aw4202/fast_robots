@@ -2,7 +2,7 @@
 
 Output of board at {-90, 0, 90} pitch & roll \
 Also demonstrating the correct working of the IMU readings
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part1_vid1.mp4" width="300" height="500" style="object-fit: fill;"> \
+<video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part1_vid1.mp4" width="300" height="500"></video> \
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab2/rollpitcheqns.png" width="300" height="500" style="object-fit: fill;"> \
 \
 
