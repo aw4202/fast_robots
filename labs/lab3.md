@@ -14,8 +14,7 @@ Running the scanner with a single ToF attached directly or via the breakout boar
 However the sensor's [datasheet](https://www.pololu.com/file/0J1506/vl53l1x.pdf) (pg 19) lists 0x52 as the default address. When the program prints this address it doesn't include the last read/write bit, so the remaining bits get shifted and 0x52 becomes 0x29.<br>
 
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/i2c_scan_mult_sensors.png" width="400" height="350" style="object-fit: fill;"> <br>
-Running the scanner with two ToFs returned conflicting results (all possible addresses)--since the sensors are default assigned the same address, I2C messages clash.
-(attach picture/s, sensor+breakout board and scanner results)
+Running the scanner with two ToFs returned conflicting results (all possible addresses)--since the sensors are default assigned the same address, I2C messages clash. <br>
 
 ##### Connecting without USB
 Code needs to be uploaded over USB connection first then board can be detached and battery powered. To establish bluetooth connectivity at minimum uploaded code needed to begin BLE, add service and settings, advertise, and listen for central device. However print statements and data cannot be viewed in the Arduino environment so gatt characteristics must be set up and data sent to computer. 
