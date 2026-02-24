@@ -28,7 +28,7 @@ From the documentation I initially thought a sensor had to have its address chan
 
 ##### 2 ToF + IMU
 The IMU could be connected in series to the Artemis board and then to the breakout at its other port, or connected at the third QWIIC port. Its I2C address was different from the ToFs so there were no clashes. <br>
-<video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab2/part1_vid2.mp4" controls="controls" width="400" height="700"></video> <br>
+<video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab3/2tof_imu.mp4" controls="controls" width="400" height="700"></video> <br>
 
 ##### ToF Speed
 It was expected the limiting factor of data gathering/sending would the sensor measurements. Each sensor had a ranging time between which it started ranging and until an interrupt was set once data was available. Getting the current time was a momentary operation. <br>
