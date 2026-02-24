@@ -36,10 +36,10 @@ The IMU could be connected in series to the Artemis board and then to the breako
 ##### ToF Speed
 It was expected the limiting factor of data gathering/sending would the sensor measurements. Each sensor had a ranging time between which it started ranging and until an interrupt was set once data was available. Getting the current time was a momentary operation. <br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/loop_tof_speed.png" width="650" height="400" style="object-fit: fill;"> <br>
-To find the loop speed and measure the limitng factor the time was repeatedly checked and sensor interrupts were polled (checkForDataReady()) to display data only when new was ready and prevent hanging up the loop waiting for sensing to complete. <br>
+To find the loop speed and measure the limitng factor the time was repeatedly checked and sensor interrupts were polled (checkForDataReady()) to display data only when new was ready and prevent hanging up the loop waiting for sensing to complete. <br> <br>
 The loop speed measured from the listed times was around 4mS on average while the sensors' measurement speed was close to 100 mS on average. <br>
 <br>
 ###### ToF and IMU data for sequence above
-Note that while pitching the roll drastically jumps by as much as +/180 especially around +/-90 degrees pitch. The same occurs for pitch during rolling. This can also be seen in the above video. <br>
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/ToF_vs_Time.png" width="650" height="400" style="object-fit: fill;"> <br>
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/IMU_vs_Time.png" width="6500" height="400" style="object-fit: fill;"> <br>
+Note that while pitching the roll drastically jumps by as much as +/180 especially around +/-90 degrees pitch. The same occurs for pitch during rolling. This can also be seen in the video. <br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/ToF_vs_Time.png" width="600" height="350" style="object-fit: fill;"> <br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/IMU_vs_Time.png" width="600" height="350" style="object-fit: fill;"> <br>
