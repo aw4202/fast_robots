@@ -27,14 +27,15 @@ From the documentation I initially thought a sensor had to have its address chan
 ###### Measurements taken with both sensors. Sensor 1 is lying face up and measures the distance to the ceiling. Sensor 2 initially gets shut off across the wire to XSHUT (pcitured code) and is facing my finger (0 distance).
 
 ##### 2 ToF + IMU
-The IMU could be connected to the third QWIIC port. Its I2C address was different so there were no clashes. It could also be series linked to Artemis and breakout board to IMU.  
+The IMU could be connected in series to the Artemis board and then to the breakout at its other port, or connected at the third QWIIC port. Its I2C address was different from the ToFs so there were no clashes. 
 (screenshots/video here or above)
 
 ##### ToF Speed
-The limiting factor of data gathering/sending were the sensor measurements. Each sensor had a ranging time between which it started ranging and an interrupt was set once data was available. Getting the current time was a momentary operation. 
-To find this the interrupt was polled (checkForDataReady()) to display data only when new was ready and prevent hanging up the loop waiting for sensing to complete. 
-Loop speed ~ listed times
-(code)
+It wasa expected the limiting factor of data gathering/sending would the sensor measurements. Each sensor had a ranging time between which it started ranging and until an interrupt was set once data was available. Getting the current time was a momentary operation. <br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/loop_tof_speed.png" width="650" height="400" style="object-fit: fill;"> <br>
+To find the loop speed and measure the limitng factor the time was repeatedly checked and sensor interrupts were polled (checkForDataReady()) to display data only when new was ready and prevent hanging up the loop waiting for sensing to complete. <br>
+The loop speed measured from the listed times was around 4mS on average while the sensors' measurement speed was close to 100 mS on average. <br>
+<br>
 Time_TOF_IMU_data
 -ToF data/distance vs time
 -IMU data/angle vs time
