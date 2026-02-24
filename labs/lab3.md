@@ -1,19 +1,20 @@
-##### Prelab
+#### Prelab
 To use 2 ToF sensors, the address of one ToF sensor was changed. This approach was taken because it required a one-time operation during setup compared to the overhead of enabling/disabling the sensors thousands of times as measurements were continuously taken. This also required writing to the XSHUT pin twice for a run of the program whereas the second approach involved thousands of wire tranmissions, increasing the risk of errors or malfunction especially as the robot ran in its physical environment. 
 
 To do this, one sensor will be turned on and have its address changed while the other sensor will be off. The other sensor will then be turned on, and it will be auto-assigned to the same default address that the first sensor had before its address was changed. 
 
 The sensors could be placed 90 degrees apart, on the front and side of the robot, to create front and side maps. However since the sensors have a field of view of 27 degrees, centered along the normal to surface of each sensor, there's a 63 degree 'blind spot' range between sensors that will be missed. An alternative is to place the sensor on the diagonal (45 degrees apart) from the first, reducing the blind spot range to about 18 degrees, effectively allowing a map of 72 degrees (including the blind spot) around the front of the car. However, the sides are missed and attaching the sensors is harder than in the first case, where they are simply attached to sides of the vehicle. Overall, the second approach seems preferable since it's better at detecting medium-to-small obstacles, only missing very small or distant, and more reliably creates a map of whichever direction it's driving (vs just of a 27 degree range+side). 
 
-Wiring diagram <br>
+##### Wiring diagram <br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/IMG_6070.jpg" width="350" height="350" style="object-fit: fill;"> <br>
 
-###### I2C Address & Scanner
-The address printed to the monitor matches the default address on the [Pololu page](https://www.pololu.com/product/3415) for the sensor at the top of the lab, 0101001b = 0x29.
-However the sensor's [datasheet](https://www.pololu.com/file/0J1506/vl53l1x.pdf) (pg 19) lists 0x52 as the default address. When the program prints this address it doesn't include the last read/write bit, so the remaining bits get shifted and 0x52 becomes 0x29.
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/i2c_scanner.png" width="350" height="350" style="object-fit: fill;"> \
+#### I2C Address & Scanner
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/i2c_scanner.png" width="400" height="350" style="object-fit: fill;"> <br>
+Running the scanner with a single ToF attached directly or via the breakout board returned 0x29. This matches the default address on the [Pololu page](https://www.pololu.com/product/3415) for the sensor--linked at the top of the lab--0101001b. 
+However the sensor's [datasheet](https://www.pololu.com/file/0J1506/vl53l1x.pdf) (pg 19) lists 0x52 as the default address. When the program prints this address it doesn't include the last read/write bit, so the remaining bits get shifted and 0x52 becomes 0x29.<br>
 
-Running the scanner with a single ToF attached directly or via the breakout board returned the default address. Running the scanner with two ToFs returned conflicting results (all possible addresses)--since the sensors are default assigned the same address, I2C clashes.
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/i2c_scan_mult_sensors.png" width="400" height="350" style="object-fit: fill;"> <br>
+Running the scanner with two ToFs returned conflicting results (all possible addresses)--since the sensors are default assigned the same address, I2C messages clash.
 (attach picture/s, sensor+breakout board and scanner results)
 
 ##### Connecting without USB
