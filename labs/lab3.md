@@ -22,8 +22,8 @@ Short mode is less affected by ambient light and has faster sampling so better m
 (range. repeatability, accuracy, ranging time.)
 
 ##### Sensors in Parallel
-To do this, one sensor was turned on and had its address changed while the other sensor remained off. The other sensor was then turned on, and would be auto-assigned to the same default address that the first sensor had before its address was changed. From the documentation I thought a sensor had to have its address changed, be shut off then restarted for the change to take effect, and that a sensor had to begin first to be shut off, so getting the sequence of steps correct took several attempts. Also I initially thought XHSUT was an internally programmed register/sensor mode on the ToF, and didn't require connection to an Artemis pin.
-Attached to breakout board, extra wire between artemis pin that's used for XSHUT and sensor that gets shut off. Address reassignment procedure as described in prelab (turn sensor 2 off, begin sensor 1, reassign 1address, turn 2 on & begin.) 
+To do this, one sensor was turned on and had its address changed while the other sensor remained off. The other sensor was then turned on, and would be auto-assigned to the same default address that the first sensor had before its address was changed. From the documentation I thought a sensor had to have its address changed, be shut off then restarted for the change to take effect, and that a sensor had to begin first to be shut off, so getting the sequence of steps correct took several attempts. Also I initially thought XHSUT was an internally programmed register/sensor mode on the ToF, and didn't require connection to an Artemis pin. <br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/2ToF.jpg" width="500" height="650" style="object-fit: fill;"> <br>
 
 ##### 2 ToF + IMU
 The IMU could be connected to the third QWIIC port. Its I2C address was different so there were no clashes. It could also be series linked to Artemis and breakout board to IMU.  
