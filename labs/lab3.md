@@ -22,12 +22,14 @@ Short mode is less affected by ambient light and has faster sampling so better m
 (range. repeatability, accuracy, ranging time.)
 
 ##### Sensors in Parallel
-From the documentation I initially thought a sensor had to have its address changed, get shut off and then restarted for the change to take effect. I also thought a sensor had to first begin to be shut off, so getting the sequence of steps correct took several attempts. To do this, one sensor was turned on and had its address changed while the other sensor remained off. The other sensor was then turned on, and would be auto-assigned to the same default address that the first sensor had before its address was changed. I also thought XHSUT was an internally programmed register/sensor mode on the ToF, and didn't require connection to an Artemis pin, so it took several 'freeze' messages until both sensors were working. <br>
+From the documentation I initially thought a sensor had to have its address changed, get shut off and then restarted for the change to take effect. I also thought a sensor had to first begin to be shut off, so getting the sequence of steps correct took several attempts. To do this, one sensor was turned on and had its address changed while the other sensor remained off. The other sensor was then turned on, and would be auto-assigned to the same default address that the first sensor had before its address was changed. I also thought XHSUT was an internally programmed register/sensor mode on the ToF, and didn't require connection to an Artemis pin, so it took several 'freeze' messages until both sensors were working. <br> 
+<br> 
+The loop running the program completes a measurement from a sensor then prints it on a new line so that the timestamp printed on each new line by Arduino is more precise. The same is repeated for the other sensor. <br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/2ToF.jpg" width="500" height="650" style="object-fit: fill;"> <br>
 ###### Measurements taken with both sensors. Sensor 1 is lying face up and measures the distance to the ceiling. Sensor 2 initially gets shut off across the wire to XSHUT (pcitured code) and is facing my finger (0 distance).
 
 ##### 2 ToF + IMU
-The IMU could be connected in series to the Artemis board and then to the breakout at its other port, or connected at the third QWIIC port. Its I2C address was different from the ToFs so there were no clashes. <br>
+The IMU could be connected in series to the Artemis board and then to the breakout at its other port, or connected at the third QWIIC port. Its I2C address was different from the ToFs so there were no clashes. The IMU setup is the same as in lab 2 and the loop running the program is the same as above except with an extra measurement and print line for the IMU. <br>
 <video src="https://raw.githubusercontent.com/aw4202/fast_robots/main/videos/lab3/2tof_imu.mp4" controls="controls" width="400" height="700"></video> <br>
 ###### I cover sensor 1 then rotate it to the nearby wall (a few hundred mm) followed by ceiling (2.9m). I repeat for sensor 2. Because I am using XSHUT only at the start of the program to change addresses the measurements are unaffected when the wire slips out. I pitch then roll the IMU by +/- 90 degrees.
 
