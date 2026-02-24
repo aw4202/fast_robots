@@ -39,6 +39,7 @@ It was expected the limiting factor of data gathering/sending would the sensor m
 To find the loop speed and measure the limitng factor the time was repeatedly checked and sensor interrupts were polled (checkForDataReady()) to display data only when new was ready and prevent hanging up the loop waiting for sensing to complete. <br>
 The loop speed measured from the listed times was around 4mS on average while the sensors' measurement speed was close to 100 mS on average. <br>
 <br>
-Time_TOF_IMU_data
--ToF data/distance vs time
--IMU data/angle vs time
+###### ToF and IMU data for sequence above
+Note that while pitching the roll drastically jumps by as much as +/180 especially around +/-90 degrees pitch. The same occurs for pitch during rolling. This can also be seen in the above video. <br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/ToF_vs_Time.png" width="650" height="400" style="object-fit: fill;"> <br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/IMU_vs_Time.png" width="6500" height="400" style="object-fit: fill;"> <br>
