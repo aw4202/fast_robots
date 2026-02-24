@@ -11,7 +11,7 @@ The sensors could be placed 90 degrees apart, on the front and side of the robot
 #### I2C Address & Scanner
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/i2c_scanner.png" width="400" height="350" style="object-fit: fill;"> <br>
 Running the scanner with a single ToF attached directly or via the breakout board returned 0x29. This matches the default address on the [Pololu page](https://www.pololu.com/product/3415) for the sensor--linked at the top of the lab--0101001b. 
-However the sensor's [datasheet](https://www.pololu.com/file/0J1506/vl53l1x.pdf) (pg 19) lists 0x52 as the default address. When the program prints this address it doesn't include the last read/write bit, so the remaining bits get shifted and 0x52 becomes 0x29.<br>
+However the sensor's [datasheet](https://www.pololu.com/file/0J1506/vl53l1x.pdf) (pg 19) lists 0x52 as the default address. When the program prints this address it doesn't include the last read/write bit, so the remaining bits get shifted and 0x52 becomes 0x29. <br>
 
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab3/i2c_scan_mult_sensors.png" width="400" height="350" style="object-fit: fill;"> <br>
 Running the scanner with two ToFs returned conflicting results (all possible addresses)--since the sensors are default assigned the same address, I2C messages clash. <br>
