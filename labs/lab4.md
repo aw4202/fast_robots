@@ -1,6 +1,9 @@
 #### Prelab
 Batteries for the Artemis and motor drivers are separate so that current from one battery doesn't get split across devices. This is important especially for the motor drivers which need a consistent current of at least a certain amount. Splitting may not give the same amount across runs dependent on duty cyclce, duty ratios across motors, delays and other factors
-[diagram]
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab4/diagram.jpg" width="400" height="300" style="object-fit: fill;"> <br>
+To select pins first the Artemis datasheet was referenced for PWM compatible pins. From the list adjacent pins, 15 & 16 and 0 & 1, to simplify wiring for a given motor driver. High/signal-carrying wires for each driver coming from different areas of the board and in different directions also reduced interference risk. <br>
+
+#### Setup
 
 lower limit PWM: 75 pin 15 & 16 (side closer to camera in video), ~80 for pins 0 & 1 (side further). <br>
 overall sides similar strength. when initially disproprtional balanced by fixing (resoldering) tri-connected ground between drivers and motor controllers <br>
