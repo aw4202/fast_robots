@@ -14,7 +14,7 @@ calibration factor ~ .85 when not on floor (wheels rotating but car not moving)
 
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab4/setup.jpg" width="500" height="300" style="object-fit: fill;"> <br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab4/oscilloscope_code.jpg" width="400" height="300" style="object-fit: fill;"> <br>
-<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab4/oscilloscope_input_v.jpg" width="400" height="300" style="object-fit: fill;"> <br>
+<img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab4/oscilloscope_input_v.jpg" width="400" height="350" style="object-fit: fill;"> <br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab4/oscilloscope_output_i.jpeg" width="400" height="600" style="object-fit: fill;"> <br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab4/car_diag.jpg" width="400" height="650" style="object-fit: fill;"> <br>
 <img src="https://raw.githubusercontent.com/aw4202/fast_robots/main/images/lab4/spin_wheels_1.jpg" width="400" height="300" style="object-fit: fill;"> <br>
